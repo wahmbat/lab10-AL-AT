@@ -1,3 +1,7 @@
+#https://github.com/wahmbat/lab10-AL-AT.git
+#Partner 1: Alan Lin
+#Partner 2: Anjali Tomerlin
+
 import unittest
 from calculator import *
 
