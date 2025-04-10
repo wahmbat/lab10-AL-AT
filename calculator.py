@@ -34,6 +34,3 @@ def logarithm(a, b):
 
 def exponent(a, b):
     return a ** b
-
-
-def
