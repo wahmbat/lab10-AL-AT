@@ -14,12 +14,31 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(subtract(-3,4),1)
 
 
-    ######## Partner 1
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self):
+        test1 = mul(3,5)
+        expected1 = 15
+        self.assertEqual(test1, expected1)
 
-    # def test_divide(self): # 3 assertions
-    #     fill in code
+        test2 = mul(7,2)
+        expected2 = 14
+        self.assertEqual(test2, expected2)
+
+        test3 = mul(17,23)
+        expected3 = 391
+        self.assertEqual(test3, expected3)
+
+    def test_divide(self):
+        test1 = div(3,15)
+        expected1 = 5
+        self.assertEqual(test1, expected1)
+
+        test2 = div(24,12)
+        expected2 = 0.5
+        self.assertEqual(test2, expected2)
+
+        test3 = div(3,18)
+        expected3 = 6
+        self.assertEqual(test3, expected3)
     # ##########################
 
 
@@ -38,21 +57,34 @@ class TestCalculator(unittest.TestCase):
             logarithm(1,0)
     
     ######## Partner 1
-    # def test_log_invalid_argument(self): # 1 assertion
-    #     # call log function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     logarithm(0, 5)
-    #     fill in code
+    def test_log_invalid_argument(self):
+        with self.assertRaises(ValueError):
+            logarithm(0, 5)
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
+    def test_hypotenuse(self):
+        test1 = hypotenuse(3,4)
+        expected1 = 5.0
+        self.assertEqual(test1, expected1)
 
-    # def test_sqrt(self): # 3 assertions
-    #     # Test for invalid argument, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #    square_root(NUM)
-    #     # Test basic function
-    #     fill in code
+        test2 = hypotenuse(3,3)
+        expected2 = 4.24264068
+        self.assertAlmostEquals(test2, expected2)
+
+        test3 = hypotenuse(7,12)
+        expected3 = 13.89244398
+        self.assertAlmostEquals(test3, expected3)
+
+    def test_sqrt(self): # 3 assertions
+        with self.assertRaises(ValueError):
+            square_root(-3)
+
+        test1 = square_root(4)
+        expected1 = 2.0
+        self.assertEqual(test1, expected1)
+
+        test2 = square_root(64)
+        expected2 = 8.0
+        self.assertEqual(test2, expected2)
     ##########################
 
 # Do not touch this
