@@ -1,3 +1,7 @@
+#https://github.com/wahmbat/lab10-AL-AT.git
+#Partner 1: Alan Lin
+#Partner 2: Anjali Tomerlin
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
